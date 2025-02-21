@@ -8,13 +8,13 @@ This project is a simple RESTful API built with FastAPI for managing student dat
 
 The API provides the following endpoints:
 
--   **/**: Returns a welcome message "First Data".
--   **/status**: Returns the API name and version.
--   **/get-student/{student_id}**: Retrieves a student by their ID using a path parameter. Returns a "Student not found" message if the ID doesn't exist.
--   **/get-by-name**: Retrieves a student by their name using a query parameter. Returns a "Student not found" message if the name doesn't exist.
--   **/create-student/{student_id}**: Creates a new student with the given ID. Returns a "Student already exists" message if the ID is already in use. Accepts a JSON payload with student data.
--   **/update-student/{student_id}**: Updates an existing student's information. Accepts a JSON payload with optional fields for name, age, and year. Returns a "Student not found" message if the ID doesn't exist.
--   **/delete-student/{student_id}**: Deletes a student by their ID. Returns a "Student deleted successfully" message upon successful deletion or a "Student not found" message if the ID doesn't exist.
+-   **GET/**: Returns a welcome message "First Data".
+-   **GET/status**: Returns the API name and version.
+-   **GET/get-student/{student_id}**: Retrieves a student by their ID using a path parameter. Returns a "Student not found" message if the ID doesn't exist.
+-   **GET/get-by-name**: Retrieves a student by their name using a query parameter. Returns a "Student not found" message if the name doesn't exist.
+-   **POST/create-student/{student_id}**: Creates a new student with the given ID. Returns a "Student already exists" message if the ID is already in use. Accepts a JSON payload with student data.
+-   **PUT/update-student/{student_id}**: Updates an existing student's information. Accepts a JSON payload with optional fields for name, age, and year. Returns a "Student not found" message if the ID doesn't exist.
+-   **DELETE/delete-student/{student_id}**: Deletes a student by their ID. Returns a "Student deleted successfully" message upon successful deletion or a "Student not found" message if the ID doesn't exist.
 
 The API uses Pydantic models for data validation and serialization. Student model defines the required fields for creating a student, while UpdateStudent allows optional fields for updating.
 
