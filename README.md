@@ -33,7 +33,7 @@ The API uses Pydantic models for data validation and serialization. Student mode
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/students-list.git
+git clone https://github.com/augsmachado/students-list.git
 cd students-list
 ```
 
